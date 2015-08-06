@@ -10,13 +10,10 @@
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
-[Rr]elease/
-[Rr]eleases/
 x64/
 x86/
 build/
 bld/
-[Bb]in/
 [Oo]bj/
 
 # Roslyn cache directories
@@ -229,3 +226,8 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+IndentCode/bin/Release/IndentCode.exe.config
+IndentCode/bin/Release/IndentCode.vshost.exe
+IndentCode/bin/Release/IndentCode.vshost.exe.config
+IndentCode/bin/Release/IndentCode.vshost.exe.manifest
+IndentCode/bin/Release/IndentCode.xml
