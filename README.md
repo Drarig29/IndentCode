@@ -6,7 +6,7 @@ Initially, I made it for me, but I'll share it.<br>
 
 It serves to **increase your code indentation by 4 spaces** when you are **writing a question or an answer**, to create **code blocks or other preformatted text**.
 
-Like that :
+**Like that :**
 
 ```
 Public Class Form1
@@ -19,6 +19,7 @@ Public Class Form1
 
 End Class
 ```
+On startup, the application will **automatically load the text contained in the Clipboard**.
 # Preview
 Here's a **screenshot :**<br><br>
 ![Preview](https://dl.dropboxusercontent.com/s/03414cy4jx1sikw/Capture.png)
