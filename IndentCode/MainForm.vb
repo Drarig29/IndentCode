@@ -59,7 +59,9 @@ Public Class MainForm
     End Sub
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextToIndent.Text = Clipboard.GetText()
+        If Clipboard.ContainsText Then
+            TextToIndent.Text = Clipboard.GetText()
+        End If
     End Sub
 
 End Class
