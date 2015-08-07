@@ -30,7 +30,7 @@ Public Class MainForm
         End Try
     End Sub
 
-    Private Sub TextToIndent_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextToIndent.KeyPress
+    Private Sub TextToIndent_KeyPress(sender As Object, e As KeyPressEventArgs)
         If AscW(e.KeyChar) = 22 Then
             If Clipboard.ContainsText(TextDataFormat.Rtf) Then
                 e.Handled = True

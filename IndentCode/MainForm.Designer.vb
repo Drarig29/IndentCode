@@ -24,12 +24,12 @@ Partial Class MainForm
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(MainForm))
         Me.Indent = New System.Windows.Forms.Button()
-        Me.TextToIndent = New System.Windows.Forms.RichTextBox()
         Me.Buttons = New System.Windows.Forms.FlowLayoutPanel()
         Me.DeIndent = New System.Windows.Forms.Button()
         Me.Copy = New System.Windows.Forms.Button()
         Me.ClearTextBox = New System.Windows.Forms.Button()
         Me.CloseForm = New System.Windows.Forms.Button()
+        Me.TextToIndent = New IndentCode.WatermarkRichTextBox()
         Me.Buttons.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -41,18 +41,6 @@ Partial Class MainForm
         Me.Indent.TabIndex = 0
         Me.Indent.Text = "Increase indentation"
         Me.Indent.UseVisualStyleBackColor = True
-        '
-        'TextToIndent
-        '
-        Me.TextToIndent.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TextToIndent.Location = New System.Drawing.Point(12, 43)
-        Me.TextToIndent.Name = "TextToIndent"
-        Me.TextToIndent.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical
-        Me.TextToIndent.Size = New System.Drawing.Size(447, 230)
-        Me.TextToIndent.TabIndex = 1
-        Me.TextToIndent.Text = resources.GetString("TextToIndent.Text")
         '
         'Buttons
         '
@@ -102,13 +90,23 @@ Partial Class MainForm
         Me.CloseForm.Text = "Close"
         Me.CloseForm.UseVisualStyleBackColor = True
         '
+        'TextToIndent
+        '
+        Me.TextToIndent.Location = New System.Drawing.Point(12, 43)
+        Me.TextToIndent.Name = "TextToIndent"
+        Me.TextToIndent.Size = New System.Drawing.Size(447, 230)
+        Me.TextToIndent.TabIndex = 2
+        Me.TextToIndent.Text = ""
+        Me.TextToIndent.WatermarkColor = System.Drawing.Color.Gray
+        Me.TextToIndent.WatermarkText = resources.GetString("TextToIndent.WatermarkText")
+        '
         'MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(471, 285)
-        Me.Controls.Add(Me.Buttons)
         Me.Controls.Add(Me.TextToIndent)
+        Me.Controls.Add(Me.Buttons)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MinimumSize = New System.Drawing.Size(487, 275)
         Me.Name = "MainForm"
@@ -118,11 +116,11 @@ Partial Class MainForm
 
     End Sub
     Friend WithEvents Indent As System.Windows.Forms.Button
-    Friend WithEvents TextToIndent As System.Windows.Forms.RichTextBox
     Friend WithEvents Buttons As System.Windows.Forms.FlowLayoutPanel
     Friend WithEvents ClearTextBox As System.Windows.Forms.Button
     Friend WithEvents CloseForm As System.Windows.Forms.Button
     Friend WithEvents DeIndent As System.Windows.Forms.Button
     Friend WithEvents Copy As System.Windows.Forms.Button
+    Friend WithEvents TextToIndent As IndentCode.WatermarkRichTextBox
 
 End Class
