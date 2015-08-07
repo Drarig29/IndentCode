@@ -36,6 +36,6 @@ If you like [this tool](https://raw.githubusercontent.com/Drarig29/IndentCode/ma
 
 # About
 
-**Latest version** : 1.0<br><br>
+**Latest version** : 1.01<br><br>
 Good use!<br>
 If you have problems, you can [contact me](mailto:corentinleguitariste@hotmail.fr).
