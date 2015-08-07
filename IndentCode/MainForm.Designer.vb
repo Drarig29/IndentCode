@@ -38,7 +38,7 @@ Partial Class MainForm
         Me.Indent.Location = New System.Drawing.Point(3, 3)
         Me.Indent.Name = "Indent"
         Me.Indent.Size = New System.Drawing.Size(128, 23)
-        Me.Indent.TabIndex = 1
+        Me.Indent.TabIndex = 0
         Me.Indent.Text = "Increase indentation"
         Me.Indent.UseVisualStyleBackColor = True
         '
@@ -51,7 +51,7 @@ Partial Class MainForm
         Me.TextToIndent.Name = "TextToIndent"
         Me.TextToIndent.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.Vertical
         Me.TextToIndent.Size = New System.Drawing.Size(447, 230)
-        Me.TextToIndent.TabIndex = 2
+        Me.TextToIndent.TabIndex = 1
         Me.TextToIndent.Text = resources.GetString("TextToIndent.Text")
         '
         'Buttons
@@ -64,14 +64,14 @@ Partial Class MainForm
         Me.Buttons.Location = New System.Drawing.Point(12, 7)
         Me.Buttons.Name = "Buttons"
         Me.Buttons.Size = New System.Drawing.Size(447, 29)
-        Me.Buttons.TabIndex = 4
+        Me.Buttons.TabIndex = 0
         '
         'DeIndent
         '
         Me.DeIndent.Location = New System.Drawing.Point(137, 3)
         Me.DeIndent.Name = "DeIndent"
         Me.DeIndent.Size = New System.Drawing.Size(133, 23)
-        Me.DeIndent.TabIndex = 5
+        Me.DeIndent.TabIndex = 1
         Me.DeIndent.Text = "Decrease indentation"
         Me.DeIndent.UseVisualStyleBackColor = True
         '
@@ -80,7 +80,7 @@ Partial Class MainForm
         Me.Copy.Location = New System.Drawing.Point(276, 3)
         Me.Copy.Name = "Copy"
         Me.Copy.Size = New System.Drawing.Size(50, 23)
-        Me.Copy.TabIndex = 5
+        Me.Copy.TabIndex = 2
         Me.Copy.Text = "Copy"
         Me.Copy.UseVisualStyleBackColor = True
         '
@@ -98,13 +98,12 @@ Partial Class MainForm
         Me.CloseForm.Location = New System.Drawing.Point(390, 3)
         Me.CloseForm.Name = "CloseForm"
         Me.CloseForm.Size = New System.Drawing.Size(52, 23)
-        Me.CloseForm.TabIndex = 2
+        Me.CloseForm.TabIndex = 4
         Me.CloseForm.Text = "Close"
         Me.CloseForm.UseVisualStyleBackColor = True
         '
         'MainForm
         '
-        Me.AcceptButton = Me.Indent
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(471, 285)
