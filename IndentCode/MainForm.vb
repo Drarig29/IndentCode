@@ -1,5 +1,4 @@
 ﻿Imports System.Runtime.CompilerServices
-Imports UsefulFunctions.Extensions
 
 Public Class MainForm
 
@@ -65,3 +64,20 @@ Public Class MainForm
     End Sub
 
 End Class
+
+Module Extensions
+
+    <Extension> Public Function ReplaceFirst(value As String, oldValue As String, newValue As String) As String
+        Dim position As Integer = value.IndexOf(oldValue)
+        If position = -1 Then
+            Return value
+        Else
+            Return value.Substring(0, position) + newValue + value.Substring(position + oldValue.Length)
+        End If
+    End Function
+
+    <Extension> Public Function ZeroBased(value) As Integer
+        Return value - 1
+    End Function
+
+End Module
