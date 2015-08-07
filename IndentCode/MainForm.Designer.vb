@@ -39,7 +39,7 @@ Partial Class MainForm
         Me.Indent.Name = "Indent"
         Me.Indent.Size = New System.Drawing.Size(128, 23)
         Me.Indent.TabIndex = 1
-        Me.Indent.Text = "Increase withdrawal line"
+        Me.Indent.Text = "Increase indentation"
         Me.Indent.UseVisualStyleBackColor = True
         '
         'TextToIndent
@@ -72,7 +72,7 @@ Partial Class MainForm
         Me.DeIndent.Name = "DeIndent"
         Me.DeIndent.Size = New System.Drawing.Size(133, 23)
         Me.DeIndent.TabIndex = 5
-        Me.DeIndent.Text = "Decrease withdrawal line"
+        Me.DeIndent.Text = "Decrease indentation"
         Me.DeIndent.UseVisualStyleBackColor = True
         '
         'Copy

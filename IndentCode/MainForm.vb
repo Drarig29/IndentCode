@@ -1,4 +1,5 @@
 ﻿Imports System.Runtime.CompilerServices
+Imports UsefulFunctions.Extensions
 
 Public Class MainForm
 
@@ -30,12 +31,23 @@ Public Class MainForm
         End Try
     End Sub
 
+    Private Sub TextToIndent_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextToIndent.KeyPress
+        If AscW(e.KeyChar) = 22 Then
+            If Clipboard.ContainsText(TextDataFormat.Rtf) Then
+                e.Handled = True
+                TextToIndent.Undo()
+                TextToIndent.SelectedText = Clipboard.GetText
+            End If
+        End If
+    End Sub
+
     Private Sub Copy_Click(sender As Object, e As EventArgs) Handles Copy.Click
-        My.Computer.Clipboard.SetText(TextToIndent.Text)
+        Clipboard.SetText(TextToIndent.Text)
     End Sub
 
     Private Sub ClearTextBox_Click(sender As Object, e As EventArgs) Handles ClearTextBox.Click
         TextToIndent.Clear()
+        TextToIndent.Focus()
     End Sub
 
     Private Sub CloseForm_Click(sender As Object, e As EventArgs) Handles CloseForm.Click
@@ -47,24 +59,7 @@ Public Class MainForm
     End Sub
 
     Private Sub MainForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        TextToIndent.Text = My.Computer.Clipboard.GetText
+        TextToIndent.Text = Clipboard.GetText()
     End Sub
 
 End Class
-
-Module Extensions
-
-    <Extension> Public Function ReplaceFirst(value As String, oldValue As String, newValue As String) As String
-        Dim position As Integer = value.IndexOf(oldValue)
-        If position = -1 Then
-            Return value
-        Else
-            Return value.Substring(0, position) + newValue + value.Substring(position + oldValue.Length)
-        End If
-    End Function
-
-    <Extension> Public Function ZeroBased(value) As Integer
-        Return value - 1
-    End Function
-
-End Module
