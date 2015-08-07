@@ -56,7 +56,7 @@ Public Class WatermarkRichTextBox
     End Sub
 
     Private Sub Painted(sender As Object, e As PaintEventArgs)
-        WaterContainer.Location = New Point(2, 0)
+        WaterContainer.Location = New Point(3, 1)
         WaterContainer.Anchor = AnchorStyles.Left Or AnchorStyles.Right
         WaterContainer.Height = Me.Height
         WaterContainer.Width = Me.Width

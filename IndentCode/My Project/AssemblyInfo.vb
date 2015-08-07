@@ -9,8 +9,8 @@ Imports System.Runtime.InteropServices
 ' Passez en revue les valeurs des attributs de l'assembly
 
 <Assembly: AssemblyTitle("IndentCode")> 
-<Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("")> 
+<Assembly: AssemblyDescription("An easy tool that indent code for StackOverflow.")> 
+<Assembly: AssemblyCompany("Drarig29' Softwares")> 
 <Assembly: AssemblyProduct("IndentCode")> 
 <Assembly: AssemblyCopyright("Copyright ©  2015")> 
 <Assembly: AssemblyTrademark("")> 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' en utilisant '*', comme indiqué ci-dessous :
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.0.0")> 
-<Assembly: AssemblyFileVersion("1.0.0.0")> 
+<Assembly: AssemblyVersion("1.0.1.0")> 
+<Assembly: AssemblyFileVersion("1.0.1.0")> 
