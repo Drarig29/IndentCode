@@ -22,7 +22,7 @@ End Class
 On startup, the application will **automatically load the text contained in the Clipboard**.
 # Preview
 Here's a **screenshot :**<br><br>
-![Preview](https://dl.dropboxusercontent.com/s/03414cy4jx1sikw/Capture.png)
+![Preview](http://img4.hostingpics.net/pics/592418Capture.png)
 
 # A little tip !
 If you like [this tool](https://raw.githubusercontent.com/Drarig29/IndentCode/master/IndentCode/bin/Release/IndentCode.exe), you can **add it as external tool in Visual Studio** :
@@ -32,7 +32,7 @@ If you like [this tool](https://raw.githubusercontent.com/Drarig29/IndentCode/ma
 * In the Command box, browse to the previously downloaded tool,
 * Click OK, then the tool is added to External Tools.
 
-![ExternalToolsPreview](https://dl.dropboxusercontent.com/s/v7s3f55kh2bhbip/ExternalToolsPreview.png)
+![ExternalToolsPreview](http://img4.hostingpics.net/pics/129896ExternalToolsPreview.png)
 
 # About
 
